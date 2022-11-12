@@ -45,11 +45,13 @@ chat_anticurse.simplemask[21] = " f" .. ""..x3.."ck"
 chat_anticurse.simplemask[22] = ""..x1.."rs"..x4.."h"..x5.."l"..x4..""
 chat_anticurse.simplemask[23] = " c"..x3.."nt "
 chat_anticurse.simplemask[24] = " f"..x1.."gg"..x5.."t"
-chat_anticurse.simplemask[25] = " r"..x1.."p"..x4.."d"
-chat_anticurse.simplemask[26] = " f"..x1.."g"
+chat_anticurse.simplemask[25] = " f"..x1.."gg"..x5.."ts"
+chat_anticurse.simplemask[26] = " r"..x1.."p"..x4.."d"
+chat_anticurse.simplemask[27] = " f"..x1.."g"
+chat_anticurse.simplemask[28] = " "..x1.."n"..x1.."l"
 
 -- harmless word added for testing.
-chat_anticurse.simplemask[27] = " booger"
+chat_anticurse.simplemask[29] = " booger"
 
 
 
