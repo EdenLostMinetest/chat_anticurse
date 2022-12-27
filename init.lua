@@ -84,6 +84,8 @@ chat_anticurse.check_message = function(name, message)
     return uncensored
 end
 
+local kick_msg = "Inappropriate words used in public chat."
+
 minetest.register_on_chat_message(function(name, message)
     local uncensored = chat_anticurse.check_message(name, message)
 
@@ -94,7 +96,7 @@ minetest.register_on_chat_message(function(name, message)
     end
 
     if uncensored == 2 then
-        minetest.kick_player(name, "Cursing or words, inappropriate to game server. Kids may be playing here!")
+        minetest.kick_player(name, kick_msg)
         minetest.chat_send_all("Player <"..name.."> warned for cursing" )
         minetest.log("action", "Player "..name.." warned for cursing. Chat:"..message)
         return true
@@ -114,7 +116,7 @@ if minetest.chatcommands["me"] then
         end
 
         if uncensored == 2 then
-            minetest.kick_player(name, "Cursing or words, inappropriate to game server. Kids may be playing here!")
+            minetest.kick_player(name, kick_msg)
             minetest.chat_send_all("Player <"..name.."> warned for cursing" )
             minetest.log("action", "Player "..name.." warned for cursing. Me:"..param)
             return
@@ -136,7 +138,7 @@ if minetest.chatcommands["msg"] then
         end
 
         if uncensored == 2 then
-            minetest.kick_player(name, "Cursing or words, inappropriate to game server. Kids may be playing here!")
+            minetest.kick_player(name, kick_msg)
             minetest.chat_send_all("Player <"..name.."> warned for cursing" )
             minetest.log("action", "Player "..name.." warned for cursing. Msg:"..param)
             return
