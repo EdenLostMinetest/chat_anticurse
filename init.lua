@@ -21,39 +21,48 @@ local y3="о"
 local y4="е"
 local y5="я"
 
-chat_anticurse.simplemask[1] = " "..x1.."s" .. "s "
-chat_anticurse.simplemask[2] = " d" .. ""..x2.."ck"
-chat_anticurse.simplemask[3] = " p"..x4.."n" .. "is"
-chat_anticurse.simplemask[4] = " p" .. ""..x3.."ssy"
-chat_anticurse.simplemask[5] = " h"..x5.."" .. "r".."ny "
-chat_anticurse.simplemask[6] = " b"..x2.."" .. "tch "
-chat_anticurse.simplemask[7] = " b"..x2.."" .. "tche"
-chat_anticurse.simplemask[8] = " s"..x4.."" .. "x"
-chat_anticurse.simplemask[9] = " "..y4.."б" .. "а"
-chat_anticurse.simplemask[10] = " бл"..y5.."" .. " "
-chat_anticurse.simplemask[11] = " ж" .. ""..y3.."п"
-chat_anticurse.simplemask[12] = " х" .. ""..y1.."й"
-chat_anticurse.simplemask[13] = " ч" .. "л"..y4.."н"
-chat_anticurse.simplemask[14] = " п"..y2.."" .. "зд"
-chat_anticurse.simplemask[15] = " в"..y3.."" .. "збуд"
-chat_anticurse.simplemask[16] = " в"..y3.."з" .. "б"..y1.."ж"
-chat_anticurse.simplemask[17] = " сп"..y4.."" .. "рм"
-chat_anticurse.simplemask[18] = " бл"..y5.."" .. "д"
-chat_anticurse.simplemask[19] = " бл"..y5.."" .. "ть"
-chat_anticurse.simplemask[20] = " с" .. ""..y4.."кс"
-chat_anticurse.simplemask[21] = " f" .. ""..x3.."ck"
-chat_anticurse.simplemask[22] = ""..x1.."rs"..x4.."h"..x5.."l"..x4..""
-chat_anticurse.simplemask[23] = " c"..x3.."nt "
-chat_anticurse.simplemask[24] = " f"..x1.."gg"..x5.."t"
-chat_anticurse.simplemask[25] = " f"..x1.."gg"..x5.."ts"
-chat_anticurse.simplemask[26] = " r"..x1.."p"..x4.."d"
-chat_anticurse.simplemask[27] = " f"..x1.."g"
-chat_anticurse.simplemask[28] = " "..x1.."n"..x1.."l"
+chat_anticurse.simplemask = {
+  " "..x1.."s" .. "s ",
+  " d" .. ""..x2.."ck",
+  " p"..x4.."n" .. "is",
+  " p" .. ""..x3.."ssy",
+  " h"..x5.."" .. "r".."ny ",
+  " b"..x2.."" .. "tch ",
+  " b"..x2.."" .. "tche",
+  " s"..x4.."" .. "x",
+  " "..y4.."б" .. "а",
+  " бл"..y5.."" .. " ",
+  " ж" .. ""..y3.."п",
+  " х" .. ""..y1.."й",
+  " ч" .. "л"..y4.."н",
+  " п"..y2.."" .. "зд",
+  " в"..y3.."" .. "збуд",
+  " в"..y3.."з" .. "б"..y1.."ж",
+  " сп"..y4.."" .. "рм",
+  " бл"..y5.."" .. "д",
+  " бл"..y5.."" .. "ть",
+  " с" .. ""..y4.."кс",
+  " f" .. ""..x3.."ck",
+  ""..x1.."rs"..x4.."h"..x5.."l"..x4.."",
+  " c"..x3.."nt ",
+  " f"..x1.."gg"..x5.."t",
+  " f"..x1.."gg"..x5.."ts",
+  " r"..x1.."p"..x4.."d",
+  " f"..x1.."g",
+  " "..x1.."n"..x1.."l",
+
+-- Not really curse words, but trying to stop a specific spammer
+  "ROGUE",
+  "rogue",
+  "Porno",
+  "porn",
+  "Porn",
+  "d".."e".."n".."n".."i".."s",
+  "D".."E".."N".."N".."I".."S",
 
 -- harmless word added for testing.
-chat_anticurse.simplemask[29] = " booger"
-
-
+  " booger",
+}
 
 
 chat_anticurse.check_message = function(name, message)
