@@ -51,12 +51,9 @@ chat_anticurse.simplemask = {
   " f"..x1.."g",
   " "..x1.."n"..x1.."l",
 
--- Not really curse words, but trying to stop a specific spammer
-  "rogue",
+-- Not really curse words, but trying to stop a specific behavior
   "porno",
   "porn",
-  "pickles",
-  "d".."e".."n".."n".."i".."s",
 
 -- harmless word added for testing.
   " booger",
