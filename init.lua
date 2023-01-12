@@ -55,6 +55,12 @@ chat_anticurse.simplemask = {
   "porno",
   "porn",
 
+-- Ugh..
+  "fvuck",
+  "sh!t",
+  "@ss",
+  "b!tch",
+
 -- harmless word added for testing.
   " booger",
 }
