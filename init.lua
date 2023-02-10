@@ -50,6 +50,7 @@ chat_anticurse.simplemask = {
   " r"..x1.."p"..x4.."d",
   " f"..x1.."g",
   " "..x1.."n"..x1.."l",
+  " sh"..x2.."t",
 
 -- Not really curse words, but trying to stop a specific behavior
   "porno",
