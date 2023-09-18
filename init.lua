@@ -8,8 +8,9 @@
 
 chat_anticurse = {}
 chat_anticurse.simplemask = {}
--- some english and some russian curse words
--- i don't want to keep these words as cleartext in code, so they are stored like this.
+
+-- Vulgar, crude harmful words in various languages.
+-- I don't want to keep these words as cleartext in code, so they are stored like this.
 local x1="a"
 local x2="i"
 local x3="u"
@@ -22,6 +23,7 @@ local y4="е"
 local y5="я"
 
 chat_anticurse.simplemask = {
+-- English
   " "..x1.."s" .. "s ",
   " d" .. ""..x2.."ck",
   " p"..x4.."n" .. "is",
@@ -30,6 +32,17 @@ chat_anticurse.simplemask = {
   " b"..x2.."" .. "tch ",
   " b"..x2.."" .. "tche",
   " s"..x4.."" .. "x",
+  " f" .. ""..x3.."ck",
+  x1.."rs"..x4.."h"..x5.."l"..x4.."",
+  " c"..x3.."nt ",
+  " f"..x1.."gg"..x5.."t",
+  " f"..x1.."gg"..x5.."ts",
+  " r"..x1.."p"..x4.."d",
+  " f"..x1.."g",
+  " "..x1.."n"..x1.."l",
+  " sh"..x2.."t",
+
+-- Russian
   " "..y4.."б" .. "а",
   " бл"..y5.."" .. " ",
   " ж" .. ""..y3.."п",
@@ -42,15 +55,9 @@ chat_anticurse.simplemask = {
   " бл"..y5.."" .. "д",
   " бл"..y5.."" .. "ть",
   " с" .. ""..y4.."кс",
-  " f" .. ""..x3.."ck",
-  ""..x1.."rs"..x4.."h"..x5.."l"..x4.."",
-  " c"..x3.."nt ",
-  " f"..x1.."gg"..x5.."t",
-  " f"..x1.."gg"..x5.."ts",
-  " r"..x1.."p"..x4.."d",
-  " f"..x1.."g",
-  " "..x1.."n"..x1.."l",
-  " sh"..x2.."t",
+
+-- Spanish
+  " p" .. x3 .. "t" .. x1,
 
 -- Not really curse words, but trying to stop a specific behavior
   "porno",
@@ -63,7 +70,8 @@ chat_anticurse.simplemask = {
   "b!tch",
 
 -- harmless word added for testing.
-  " booger",
+  " boogerpicker",
+  " windowlicker",
 }
 
 
